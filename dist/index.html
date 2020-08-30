@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>画一只皮卡丘给你</title>
+    <style>*{margin:0;padding: 0;box-sizing: border-box;}
+        *::before, *::after{box-sizing: border-box;}
+
+        .pikachu {
+            margin-top: 10px;
+            font-size: 100px;
+            min-height: 50vh;
+            position: relative;
+        }
+        @media(max-width: 500px){
+            .pikachu{
+            font-size: 70px;
+            }
+        }
+
+        #html{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            height: 50vh;
+            width: 100%;
+        }
+        #text {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 50vh;
+            width: 100%;
+            overflow-Y: auto
+        }
+        #text::-webkit-scrollbar {
+            display:none
+        }
+        .buttons {
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 10;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .buttons > button{
+            margin-bottom: 5px;
+            padding: 5px;
+        }
+        .buttons > button:hover{
+            cursor: pointer;
+        }</style>
+
+    <style id="style"></style>
+</head>
+<body>
+    <div id="text">
+    </div>
+    <div class="buttons">
+        <button id="btnPlay">播放</button>
+        <button id="btnPause">暂停</button>
+        <button id="btnReplay">重放</button>
+        <button id="btnSlow">慢速</button>
+        <button id="btnNormal">中速</button>
+        <button id="btnQuick">快速</button>
+        
+    </div>
+    <div id="html">
+        <div class="pikachu">
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="nose"></div>
+            <div class="cheek left"></div>
+            <div class="cheek right"></div>
+            <div class="up">
+                <div class="lip left"></div>
+                <div class="lip right"></div>
+            </div>
+            <div class="down">
+                <div class="inner">
+                    <div class="tongue"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.35dd1193.js"></script>
+</body>
+</html>
