@@ -169,6 +169,10 @@ var player = {
     window.clearInterval(player.id);
   },
   run: function run() {
+    if (player.n === 0) {
+      player.code = "";
+    }
+
     if (player.n < _style.default.length) {
       if (_style.default[player.n] === "\n") {
         player.code += "<br>";
@@ -207,4 +211,4 @@ var player = {
 };
 player.init();
 },{"./style.js":"IwUp"}]},{},["epB2"], null)
-//# sourceMappingURL=main.35dd1193.js.map
+//# sourceMappingURL=main.ee6d36d2.js.map

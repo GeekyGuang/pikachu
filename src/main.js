@@ -34,6 +34,9 @@ const player = {
         window.clearInterval(player.id)
     },
     run: ()=> {
+        if (player.n === 0) {
+            player.code = ""
+        }
         if(player.n < string.length) {
             if (string[player.n] === "\n") {
                 player.code += "<br>";
