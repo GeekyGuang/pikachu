@@ -145,19 +145,19 @@ let string = `/*
 }
 
 .up .lip.left{ 
+    left: -.015em;
     border-left: .03em solid black;
     border-bottom: .03em solid black; 
     border-bottom-left-radius: .55em .3em;   
     transform: rotate(-25.5deg) translateZ(0);
-    left: -.015em;
 }
 
 .up .lip.right{
+    right: -.015em;
     border-right: .03em solid black;
     border-bottom: .03em solid black; 
     border-bottom-right-radius: .55em .3em;
     transform: rotate(25.5deg) translateZ(0); 
-    right: -.015em;
 }
 
 /* 
